@@ -11,12 +11,26 @@
 <body>
     <div class="app-page" data-page="home">
         <div class="app-topbar">
-            <div class="app-title">Home page</div>
+            <div class="app-title"><i class="fa fa-newspaper-o"></i>知乎日报</div>
         </div>
         <div class="app-content">
-            <div class="app-section">
-                <div class="app-button" data-target="page2"><i class="fa fa-plus"></i>Go to Page 2</div>
+
+            <script type="text/x-template" id="js-story-template">
+                <li class="story">
+                    <div class="media media--center">
+                        <img class="media-figure" src="${image}" />
+                        <div class="media-body">
+                            <p class="media-content">${title}</p>
+                        </div>
+                    </div>
+                </li>
+            </script>
+
+            <div class="app-section-stories">
+                <ul class="app-list" id="js-story-container">
+                </ul>
             </div>
+
         </div>
     </div>
 
