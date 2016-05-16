@@ -16,7 +16,7 @@
         <div class="app-content">
 
             <script type="text/x-template" id="js-story-template">
-                <li class="story">
+                <li class="story app-button" data-target="detail" data-target-args='{"id":${id}}'>
                     <div class="media media--center">
                         <img class="media-figure" src="${image}" />
                         <div class="media-body">
@@ -34,13 +34,14 @@
         </div>
     </div>
 
-    <div class="app-page" data-page="page2">
+    <div class="app-page" data-page="detail">
         <div class="app-topbar">
             <div class="app-button left" data-back data-autotitle></div>
-            <div class="app-title">Page 2</div>
+            <div class="js-story-title app-title">详情页</div>
         </div>
         <div class="app-content">
-                <div class="app-button" data-target="page3">Go to Page 3</div>
+            <img class="js-story-cover story-cover" />
+            <div class="js-story-content story-content"></div>
         </div>
     </div>
 

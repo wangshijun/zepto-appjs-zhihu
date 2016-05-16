@@ -11,14 +11,7 @@ app.get('/', function (req, res, next) {
 var apiBaseUrl = 'http://news-at.zhihu.com';
 app.get(/^\/api\/.+$/, function (req, res, next) {
 	console.log('proxy: { %s => %s }', req.url, apiBaseUrl + req.url);
-	request.get(apiBaseUrl + req.url, function (err, response, body) {
-		if (err) {
-			console.log('proxy err:', err);
-			res.json({});
-		} else {
-			res.send(body);
-		}
-	});
+	request.get(apiBaseUrl + req.url).pipe(res);
 });
 
 app.get('/img/proxy', function (req, res, next) {

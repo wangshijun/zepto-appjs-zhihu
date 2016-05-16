@@ -65,3 +65,18 @@
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
+
+.story-cover {
+    width: 100%;
+}
+
+.story-content p {
+    margin: 10px 0;
+    line-height: 1.5em;
+    text-indent: 2em;
+}
+
+.story-content .content-image {
+    width: 90%;
+}
+
