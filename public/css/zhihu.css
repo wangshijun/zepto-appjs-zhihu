@@ -80,3 +80,22 @@
     width: 90%;
 }
 
+.button-strip {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background: #EEE;
+}
+
+.button-strip .app-button {
+    width: 50%;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.comment {
+    padding: 10px;
+    border-bottom: 1px solid #EEE;
+}
